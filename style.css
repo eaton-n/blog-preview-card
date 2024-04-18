@@ -1,0 +1,103 @@
+:root {
+	--primary-400: hsl(47, 88%, 63%);
+	--neutral-100: hsl(0, 0%, 100%);
+	--neutral-400: hsl(0, 0%, 50%);
+	--neutral-800: hsl(0, 0%, 7%);
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	text-decoration: none;
+	font-size: inherit;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'FigTree', Arial, sans-serif;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 14px;
+	background-color: var(--primary-400);
+	color: var(--neutral-800);
+	@font-face {
+		font-family: 'FigTree'; /* Give your font a name */
+		src: url('./assets/fonts/Figtree-VariableFont_wght.ttf'); /* Path to your font file */
+	}
+}
+
+.card {
+	background-color: var(--neutral-100);
+	margin: 1rem;
+	padding: 1.5rem;
+	border-radius: 20px;
+	border: 1px solid var(--neutral-800);
+	box-shadow: 0.5rem 0.5rem;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	align-items: flex-start;
+	max-width: 384px;
+	transition: all 0.2s;
+}
+
+.card:hover {
+	box-shadow: 0.6rem 0.6rem 0.5rem;
+}
+
+.image {
+	border-radius: 10px;
+	object-fit: contain;
+	width: 100%;
+}
+
+.category {
+	padding: 4px 12px;
+	background: var(--primary-400);
+	font-weight: bolder;
+	border-radius: 4px;
+	font-size: 12px;
+}
+
+.title {
+	font-size: 20px;
+	font-weight: bolder;
+}
+
+.title:hover {
+	color: var(--primary-400);
+	cursor: pointer;
+}
+
+.info {
+	color: var(--neutral-800);
+	font-size: 12px;
+}
+
+.intro {
+	color: var(--neutral-400);
+	line-height: 150%;
+}
+
+.profile {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 1rem;
+}
+
+.avatar {
+	background-image: url();
+	height: 32px;
+	border-radius: 9000px;
+	aspect-ratio: 1;
+	background-position: center;
+	background-size: cover;
+}
+
+.author {
+	font-weight: bolder;
+}
